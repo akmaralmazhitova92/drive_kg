@@ -4,14 +4,14 @@ import 'package:drive_kg/list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-class ExamplePage extends StatefulWidget {
-  const ExamplePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  _ExamplePageState createState() => _ExamplePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _ExamplePageState extends State<ExamplePage> {
+class _HomePageState extends State<HomePage> {
   final Random random = Random();
 
   final List<ListItem> category = [
