@@ -11,15 +11,18 @@ class CategoryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title, style: TextStyle(color: Colors.black)),
+        title: Text(title, style: const TextStyle(color: Colors.black)),
         backgroundColor: Colors.blue,
       ),
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index].title),
-            leading: Image.asset(items[index].imagePath),
+          return GestureDetector(
+           
+            child: ListTile(
+              title: Text(items[index].title),
+              leading: Image.asset(items[index].imagePath),
+            ),
           );
         },
       ),
